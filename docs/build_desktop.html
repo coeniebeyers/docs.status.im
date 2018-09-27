@@ -87,23 +87,37 @@
                 <a href="https://github.com/status-im/docs.status.im/edit/develop/source/docs/build_desktop.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
               </header>
               <div class="article-content" itemprop="articleBody">
-                <h1 id="Prerequisites" class="article-heading"><a href="#Prerequisites" class="headerlink" title="Prerequisites"></a>Prerequisites<a class="article-anchor" href="#Prerequisites" aria-hidden="true"></a></h1><p>lein, node.js v.8, cmake, Qt 5.9.1 (with QtWebEngine components installed), Qt’s qmake available in PATH. If building on Ubuntu newer than 16.10, then Qt 5.10.1 is recommended (although not fully tested).</p>
-<p>Qt 5.9.1 for Linux is available here: <a href="https://download.qt.io/archive/qt/5.9/5.9.1/qt-opensource-linux-x64-5.9.1.run" target="_blank" rel="noopener">https://download.qt.io/archive/qt/5.9/5.9.1/qt-opensource-linux-x64-5.9.1.run</a></p>
-<p>Note: add qmake to PATH via</p>
+                <h1 id="Prerequisites" class="article-heading"><a href="#Prerequisites" class="headerlink" title="Prerequisites"></a>Prerequisites<a class="article-anchor" href="#Prerequisites" aria-hidden="true"></a></h1><p>You will need the following tools installed:</p>
 <ul>
+<li>Leiningen (Clojure build tool, get it from <a href="https://leiningen.org" target="_blank" rel="noopener">https://leiningen.org</a>)</li>
+<li>Node.js v.8</li>
+<li>CMake 3.1.0 or higher</li>
+<li>Qt 5.9.1 or higher. You’ll only need macOS and QtWebEngine components installed. </li>
+</ul>
+<h2 id="Qt-setup" class="article-heading"><a href="#Qt-setup" class="headerlink" title="Qt setup"></a>Qt setup<a class="article-anchor" href="#Qt-setup" aria-hidden="true"></a></h2><p>Set Qt’s environment variables: </p>
+<ul>
+<li><code>QT_PATH</code> should point to the location of Qt’s distribution, e.g. <code>/Users/&lt;user_name&gt;/Qt/5.11.2</code>. It should not end with a slash.</li>
+<li>add qmake to PATH via <ul>
 <li>On MacOS: <code>export PATH=&lt;QT_PATH&gt;/clang_64/bin:$PATH</code></li>
 <li>On Linux: <code>export PATH=&lt;QT_PATH&gt;/gcc_64/bin:$PATH</code></li>
 </ul>
-<p>Caveats:</p>
+</li>
+</ul>
+<p>OS-specific notes:</p>
 <ul>
+<li>If building on Ubuntu newer than 16.10, then Qt 5.10.1 is recommended (although not fully tested).</li>
+<li>Note that building on macOS Mojave requires Qt 5.11.2, lower versions will not work.</li>
+</ul>
+<p>Qt 5.9.1 for Linux is available here: <a href="https://download.qt.io/archive/qt/5.9/5.9.1/qt-opensource-linux-x64-5.9.1.run" target="_blank" rel="noopener">https://download.qt.io/archive/qt/5.9/5.9.1/qt-opensource-linux-x64-5.9.1.run</a></p>
+<h2 id="Caveats" class="article-heading"><a href="#Caveats" class="headerlink" title="Caveats"></a>Caveats<a class="article-anchor" href="#Caveats" aria-hidden="true"></a></h2><ul>
 <li>If npm hangs at some step, check the version. If it’s 5.6.0 or higher, try downgrading to 5.5.1 via <code>npm install -g npm@5.5.1</code></li>
 </ul>
 <h1 id="Building-a-release-package" class="article-heading"><a href="#Building-a-release-package" class="headerlink" title="Building a release package"></a>Building a release package<a class="article-anchor" href="#Building-a-release-package" aria-hidden="true"></a></h1><p>Run the following commands to build a Desktop package for the host environment (Linux or Mac OS):</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">make setup</span><br><span class="line">make prepare-desktop</span><br><span class="line">make release-desktop</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/status-im/status-react.git</span><br><span class="line"><span class="built_in">cd</span> status-react</span><br><span class="line">make setup</span><br><span class="line">make prepare-desktop</span><br><span class="line">make release-desktop</span><br></pre></td></tr></table></figure>
 <h1 id="Development-environment-setup" class="article-heading"><a href="#Development-environment-setup" class="headerlink" title="Development environment setup"></a>Development environment setup<a class="article-anchor" href="#Development-environment-setup" aria-hidden="true"></a></h1><h2 id="To-install-react-native-cli-with-desktop-commands-support" class="article-heading"><a href="#To-install-react-native-cli-with-desktop-commands-support" class="headerlink" title="To install react-native-cli with desktop commands support"></a>To install react-native-cli with desktop commands support<a class="article-anchor" href="#To-install-react-native-cli-with-desktop-commands-support" aria-hidden="true"></a></h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/status-im/react-native-desktop.git</span><br><span class="line"><span class="built_in">cd</span> react-native-desktop/react-native-cli</span><br><span class="line">npm update</span><br><span class="line">npm install -g</span><br></pre></td></tr></table></figure>
 <h2 id="To-setup-re-natal-dev-builds-of-status-react-for-Desktop" class="article-heading"><a href="#To-setup-re-natal-dev-builds-of-status-react-for-Desktop" class="headerlink" title="To setup re-natal dev builds of status-react for Desktop"></a>To setup re-natal dev builds of status-react for Desktop<a class="article-anchor" href="#To-setup-re-natal-dev-builds-of-status-react-for-Desktop" aria-hidden="true"></a></h2><ol>
 <li><p>Run the following commands:</p>
- <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/status-im/status-react.git</span><br><span class="line"><span class="built_in">cd</span> status-react</span><br><span class="line">scripts/prepare-for-platform.sh desktop</span><br><span class="line">npm install</span><br><span class="line">ln -sf <span class="string">'./node_modules/re-natal/index.js'</span> <span class="string">'./re-natal'</span></span><br><span class="line">./re-natal use-figwheel</span><br><span class="line">./re-natal <span class="built_in">enable</span>-source-maps</span><br></pre></td></tr></table></figure>
+ <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/status-im/status-react.git</span><br><span class="line"><span class="built_in">cd</span> status-react</span><br><span class="line">make dev-desktop</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>In separate terminal tab: <code>npm start</code> (note: it starts react-native packager )</p>
 </li>
@@ -128,7 +142,7 @@
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2018-09-27T09:24:54.397Z" itemprop="dateModified">Last updated: 2018-09-27</time>
+                <time class="article-footer-updated" datetime="2018-09-27T10:00:13.086Z" itemprop="dateModified">Last updated: 2018-09-27</time>
                 <a href="intro_desktop.html" class="article-footer-prev" title="Getting Started"><i class="fa fa-chevron-left"></i><span>Prev</span></a><a href="build_desktop_troubleshooting.html" class="article-footer-next" title="Troubleshooting"><span>Next</span><i class="fa fa-chevron-right"></i></a>
               </footer>
             </div>
@@ -136,7 +150,7 @@
           <aside id="article-toc" role="navigation">
             <div id="article-toc-inner">
               <strong class="sidebar-title">Contents</strong>
-              <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Prerequisites"><span class="toc-text">Prerequisites</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Building-a-release-package"><span class="toc-text">Building a release package</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Development-environment-setup"><span class="toc-text">Development environment setup</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#To-install-react-native-cli-with-desktop-commands-support"><span class="toc-text">To install react-native-cli with desktop commands support</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#To-setup-re-natal-dev-builds-of-status-react-for-Desktop"><span class="toc-text">To setup re-natal dev builds of status-react for Desktop</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Clean-up-data"><span class="toc-text">Clean up data</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#On-Linux"><span class="toc-text">On Linux</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#On-a-Mac"><span class="toc-text">On a Mac</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Editor-setup"><span class="toc-text">Editor setup</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#emacs-cider"><span class="toc-text">emacs-cider</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#vim-fireplace"><span class="toc-text">vim-fireplace</span></a></li></ol></li></ol></li></ol>
+              <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Prerequisites"><span class="toc-text">Prerequisites</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Qt-setup"><span class="toc-text">Qt setup</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Caveats"><span class="toc-text">Caveats</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Building-a-release-package"><span class="toc-text">Building a release package</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Development-environment-setup"><span class="toc-text">Development environment setup</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#To-install-react-native-cli-with-desktop-commands-support"><span class="toc-text">To install react-native-cli with desktop commands support</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#To-setup-re-natal-dev-builds-of-status-react-for-Desktop"><span class="toc-text">To setup re-natal dev builds of status-react for Desktop</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Clean-up-data"><span class="toc-text">Clean up data</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#On-Linux"><span class="toc-text">On Linux</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#On-a-Mac"><span class="toc-text">On a Mac</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Editor-setup"><span class="toc-text">Editor setup</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#emacs-cider"><span class="toc-text">emacs-cider</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#vim-fireplace"><span class="toc-text">vim-fireplace</span></a></li></ol></li></ol></li></ol>
               <a href="#" id="article-toc-top">Back to Top</a>
             </div>
           </aside>
