@@ -2,11 +2,11 @@
 <html lang="en">
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>News | Status</title>
+  <title>WIP Features | Status</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://dev-docs.status.im/news/2018/06/index.html">
+  <link rel="canonical" href="https://dev-docs.status.im/wip/index.html">
   <!-- Alternative links -->
   
   <!-- Icon -->
@@ -31,10 +31,7 @@
   <!-- RSS -->
   <link rel="alternate" href="/atom.xml" title="Status">
   <meta property="og:image" content="/img/share.png?v=0.0.5" />
-  <!-- Google Analytics -->
-  
-
-  <link rel="stylesheet" href="/js/styles/railscasts.css" />
+  <meta property="og:title" content="Status, a Mobile Ethereum OS" />
 </head>
 
 <body>
@@ -74,33 +71,57 @@
 </header>
 
     
-    
-<div id="content-wrap">
+    <div id="content-wrap">
   <div class="wrapper">
     <div class="inner">
-      
+      <header id="plugin-list-header">
+        <h1 id="plugin-list-title">WIP Features</h1>
+      </header>
+      <ul id="plugin-list">
         
-          <article class="article post" itemscope itemtype="http://schema.org/Article">
-  <header class="article-header">
+          <li class="plugin on">
+  <img src="/wip/thumbnails/secrecy.jpg" style="display: block; width: 200px; height: 200px; margin-bottom: 20px;" />
+  <a href="https://github.com/status-im/status-react/pull/5646" class="plugin-name" target="_blank">PFS</a>
+  <p class="plugin-desc">Perfect Forward Secrecy and Group Chats</p>
+  <div class="plugin-tag-list">
     
-      <h1>
-        <a href="/news/2018/06/20/embark-3-1-released/" class="article-title" itemprop="name">Embark by Status 3.1</a>
-      </h1>
+      <a href="#security" class="plugin-tag">security</a>
     
-    <a href="/news/2018/06/20/embark-3-1-released/" class="article-date"><time datetime="2018-06-20T00:00:00.000Z">2018-06-20</time></a>
-  </header>
-  <div class="article-content" itemprop="articleBody">
-    <p>More info can be found in the <a href="https://blog.status.im/embark-3-1-planet-express-60493ca0ad79" target="_blank" rel="noopener">medium post</a></p>
-
+      <a href="#key exchange" class="plugin-tag">key exchange</a>
+    
+      <a href="#privacy" class="plugin-tag">privacy</a>
+    
+      <a href="#secrecy" class="plugin-tag">secrecy</a>
+    
+      <a href="#communication" class="plugin-tag">communication</a>
+    
+      <a href="#chat" class="plugin-tag">chat</a>
+    
   </div>
-  
-</article>
+</li>
 
         
-      
+          <li class="plugin on">
+  <img src="/wip/thumbnails/mail.jpg" style="display: block; width: 200px; height: 200px; margin-bottom: 20px;" />
+  <a href="https://github.com/status-im/ideas/tree/master/ideas/280-discoverable-trusted-server-nodes" class="plugin-name" target="_blank">Mail Servers</a>
+  <p class="plugin-desc">Cryptoeconomics and Whisper Messages, oh my!</p>
+  <div class="plugin-tag-list">
+    
+      <a href="#chat" class="plugin-tag">chat</a>
+    
+      <a href="#NFTs" class="plugin-tag">NFTs</a>
+    
+      <a href="#collectibles" class="plugin-tag">collectibles</a>
+    
+  </div>
+</li>
+
+        
+      </ul>
     </div>
   </div>
 </div>
+
     <div class="pre-footer">
     <div class="pre-footer-inner">
         <div class="community">
@@ -118,21 +139,8 @@
         <div class="mail">
             <div class="mail-inner">
                 <h3>Download Status</h3>
-                <p>If you have an Android, you can easily get Status <a href="https://get.status.im" target="_blank" class="download">here</a>. You can also download our desktop builds there ;)</p>
-                <p>If you're on iOS, you'll need to sign up below in order to receive an automated TestFlight invitation while we're still in Beta.</p>
-                <div class="email-form ">
-                    <!--[if lte IE 8]>
-                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-                    <![endif]-->
-                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-                    <script>
-                      hbspt.forms.create({
-                        css: '',
-                        portalId: "3954379",
-                        formId: "c1eac0b5-5723-47e6-9d66-87a783c38d82"
-                      });
-                    </script>
-                </div>
+                <p>If you have an Android, you can easily get Status <a href="https://play.google.com/store/apps/details?id=im.status.ethereum" target="_blank" class="download">here</a>. You can also download our nightlies and desktop builds <a  href="https://status-im.github.io/nightly/" target="_blank" class="download">here</a>.</p>
+                <p>If you're on iOS, you'll need to use <a href="https://testflight.apple.com/join/J8EuJmey" target="_blank" class="download">this form</a> to sign up easily and get TestFlight while we're still in Beta.</p>
             </div>
         </div>
     </div>
@@ -155,7 +163,7 @@
   <nav id="mobile-nav">
   <div id="mobile-nav-inner">
     <ul id="mobile-nav-list">
-      <a href="/docs/" class="mobile-nav-link">Docs</a><a href="/tutorials/" class="mobile-nav-link">Tutorials</a><a href="/plugins/" class="mobile-nav-link">Plugins</a><a href="/chat/" class="mobile-nav-link">Chat</a><a href="/news/" class="mobile-nav-link">Blog</a>
+      <a href="/docs/" class="mobile-nav-link">Docs</a><a href="/tutorials/" class="mobile-nav-link">Tutorials</a><a href="/plugins/" class="mobile-nav-link">Plugins</a><a href="/chat/" class="mobile-nav-link">Chat</a><a href="/news/" class="mobile-nav-link">Blog</a><a href="/wip/" class="mobile-nav-link">menu.wip</a>
       <li class="mobile-nav-item">
         <a href="https://github.com/staus-im" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
       </li>
