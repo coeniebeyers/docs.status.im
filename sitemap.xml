@@ -79,7 +79,7 @@
   </url>
   
   <url>
-    <loc>https://dev-docs.status.im/docs/report_a_bug.html</loc>
+    <loc>https://dev-docs.status.im/docs/security_champions.html</loc>
     
     <lastmod>2018-09-27T07:11:04.220Z</lastmod>
     
@@ -93,49 +93,7 @@
   </url>
   
   <url>
-    <loc>https://dev-docs.status.im/docs/status_web_api.html</loc>
-    
-    <lastmod>2018-09-27T07:11:04.220Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://dev-docs.status.im/templates/index.html</loc>
-    
-    <lastmod>2018-09-27T07:11:04.220Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dev-docs.status.im/docs/intro_dapps.html</loc>
-    
-    <lastmod>2018-09-27T07:11:04.220Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dev-docs.status.im/docs/intro_desktop.html</loc>
-    
-    <lastmod>2018-09-27T07:11:04.220Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dev-docs.status.im/docs/introduction.html</loc>
-    
-    <lastmod>2018-09-27T07:11:04.220Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dev-docs.status.im/docs/nimbus.html</loc>
-    
-    <lastmod>2018-09-27T07:11:04.220Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dev-docs.status.im/docs/send_transaction_flow.html</loc>
     
     <lastmod>2018-09-27T07:11:04.220Z</lastmod>
     
@@ -149,6 +107,48 @@
   </url>
   
   <url>
+    <loc>https://dev-docs.status.im/docs/intro_dapps.html</loc>
+    
+    <lastmod>2018-09-27T07:11:04.220Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dev-docs.status.im/docs/introduction.html</loc>
+    
+    <lastmod>2018-09-27T07:11:04.220Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dev-docs.status.im/docs/intro_desktop.html</loc>
+    
+    <lastmod>2018-09-27T07:11:04.220Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dev-docs.status.im/docs/status_web_api.html</loc>
+    
+    <lastmod>2018-09-27T07:11:04.220Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dev-docs.status.im/docs/nimbus.html</loc>
+    
+    <lastmod>2018-09-27T07:11:04.220Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dev-docs.status.im/docs/report_a_bug.html</loc>
+    
+    <lastmod>2018-09-27T07:11:04.220Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://dev-docs.status.im/index.html</loc>
     
     <lastmod>2018-09-27T07:11:04.220Z</lastmod>
@@ -156,7 +156,14 @@
   </url>
   
   <url>
-    <loc>https://dev-docs.status.im/docs/security_champions.html</loc>
+    <loc>https://dev-docs.status.im/docs/security_existing_features.html</loc>
+    
+    <lastmod>2018-09-27T07:11:04.220Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dev-docs.status.im/docs/security_github_labels.html</loc>
     
     <lastmod>2018-09-27T07:11:04.220Z</lastmod>
     
@@ -170,7 +177,21 @@
   </url>
   
   <url>
-    <loc>https://dev-docs.status.im/docs/security_github_labels.html</loc>
+    <loc>https://dev-docs.status.im/docs/status_react_structure.html</loc>
+    
+    <lastmod>2018-09-27T07:11:04.220Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dev-docs.status.im/docs/security_sensitive_data.html</loc>
+    
+    <lastmod>2018-09-27T07:11:04.220Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dev-docs.status.im/docs/send_transaction_flow.html</loc>
     
     <lastmod>2018-09-27T07:11:04.220Z</lastmod>
     
@@ -191,27 +212,6 @@
   </url>
   
   <url>
-    <loc>https://dev-docs.status.im/docs/security_sensitive_data.html</loc>
-    
-    <lastmod>2018-09-27T07:11:04.220Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dev-docs.status.im/docs/status_react_structure.html</loc>
-    
-    <lastmod>2018-09-27T07:11:04.220Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dev-docs.status.im/docs/security_existing_features.html</loc>
-    
-    <lastmod>2018-09-27T07:11:04.220Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://dev-docs.status.im/docs/status_optimized.html</loc>
     
     <lastmod>2018-09-27T07:11:04.220Z</lastmod>
@@ -226,13 +226,6 @@
   </url>
   
   <url>
-    <loc>https://dev-docs.status.im/docs/embark.html</loc>
-    
-    <lastmod>2018-09-27T07:11:04.216Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://dev-docs.status.im/docs/build_desktop_troubleshooting.html</loc>
     
     <lastmod>2018-09-27T07:11:04.216Z</lastmod>
@@ -240,14 +233,7 @@
   </url>
   
   <url>
-    <loc>https://dev-docs.status.im/docs/build_desktop_google_breakpad.html</loc>
-    
-    <lastmod>2018-09-27T07:11:04.216Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dev-docs.status.im/docs/add_your_dapp.html</loc>
+    <loc>https://dev-docs.status.im/docs/ens_usernames.html</loc>
     
     <lastmod>2018-09-27T07:11:04.216Z</lastmod>
     
@@ -261,14 +247,7 @@
   </url>
   
   <url>
-    <loc>https://dev-docs.status.im/docs/contributor_guide.html</loc>
-    
-    <lastmod>2018-09-27T07:11:04.216Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dev-docs.status.im/chat/index.html</loc>
+    <loc>https://dev-docs.status.im/docs/build_desktop_google_breakpad.html</loc>
     
     <lastmod>2018-09-27T07:11:04.216Z</lastmod>
     
@@ -282,7 +261,28 @@
   </url>
   
   <url>
-    <loc>https://dev-docs.status.im/docs/ens_usernames.html</loc>
+    <loc>https://dev-docs.status.im/docs/add_your_dapp.html</loc>
+    
+    <lastmod>2018-09-27T07:11:04.216Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dev-docs.status.im/docs/contributor_guide.html</loc>
+    
+    <lastmod>2018-09-27T07:11:04.216Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dev-docs.status.im/docs/embark.html</loc>
+    
+    <lastmod>2018-09-27T07:11:04.216Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://dev-docs.status.im/chat/index.html</loc>
     
     <lastmod>2018-09-27T07:11:04.216Z</lastmod>
     
